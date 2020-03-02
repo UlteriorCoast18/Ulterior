@@ -4,17 +4,11 @@ var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
 var messages = [{  
-  id: 1,
-  text: "CHAT",
+  author: "Cristóforo",
+  text: "Hola Mundo :3",
 }];
 
 app.use(express.static('public'));
-// el socket escuchar� el evento new-message y los traera
-// en data con el m�todo push
-// para notificar a los clientes
-// para conectar en privado socket.emit
-// pero como es una sala de chat entonces
-//io.sockets.emit 
 
 let coneixones = 0;
 
